@@ -1,0 +1,78 @@
+.bg {
+    background-image: url("./images/conference.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+}
+
+.title {
+    background: rgba(6, 39, 65, 0.35);
+    z-index: 1;
+    margin: auto;
+    padding: 10px;
+    color: #a5edf7;
+    text-shadow: 5px 5px #062741;
+    box-shadow: 8px 8px;
+}
+
+.page {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.content {
+    margin-bottom: 100px;
+}
+
+.content-image {
+    box-shadow: 10px 15px #a5edf7;
+    object-fit: cover;
+}
+
+.content-title {
+    color:  #062741;
+    border-color: #a5edf7;
+    border-spacing: 10px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #a5edf7 0%,#044e70 100%);
+    border-image-slice: 1;
+    border-width: 5px;
+    text-align: center;
+    margin: 10px;
+    background-repeat: no-repeat;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    text-align: center;
+}
+
+.footer {
+    background: content-box !important;
+}
+
+.footer-logo {
+    height: 100px;
+}
+
+.footer-image {
+    height: 100px;
+    transition: .5s ease;
+    margin: 10px;
+    box-shadow: 5px 8px #a5edf7;
+}
+
+.footer-image.round {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.footer-image.round:hover {
+    height: 70px;
+}
