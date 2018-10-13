@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WWCODE Connect Asia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+    <div class="page">
+        <div class="jumbotron text-center bg wow">
+            <div class="title p-5 m-5">
+                <h1>Women <br>Who<br> Code<br>
+                    Connect <br>Asia
+                </h1>
+                <hr style="width: 50%">
+                <h3>Celebrating Collaboration</h3>
+                <hr style="width: 50%">
+                <h3>Friday 8th March, 2019
+                    <br>
+                    Singapore
+                </h3>
+            </div>
+        </div>
+        <div class="container content wow">
+            <div class="row content-title">
+                <h1>
+                    Call For Papers
+                </h1>
+            </div>
+            <div class="row">
+                <img src="./images/speaker.png" class="content-image">
+                <h2 class="content-text">
+                    We are currently looking for speakers.
+                    If you have a great talk in mind, come and submit it at ...
+                </h2>
+            </div>
+        </div>
+        <hr>
+        <div class="footer row">
+            <div class="col footer-group" id="hq">
+                <a href="https://www.womenwhocode.com" target="_blank">
+                    <img src="./images/wwcode.jpeg" alt="WWCode" class="footer-image">
+                </a>
+            </div>
+            <div class="col footer-group" id="local-chapters">
+                <h3 class="text-center">
+                    Regional Chapters
+                </h3>
+                <div class="row">
+                    <div class="col chapter">
+                        <a href="https://www.womenwhocode.com/kl" target="_blank">
+                            <img src="./images/malaysia.png" alt="WWCode Malaysia" class="footer-image round">
+                        </a>
+                        Kuala Lumpur
+                    </div>
+                    <div class="col chapter">
+                        <a href="https://www.womenwhocode.com/singapore" target="_blank">
+                            <img src="./images/singapore.png" alt="WWCode Singapore" class="footer-image round">
+                        </a>
+                        Singapore
+                    </div>
+                    <div class="col chapter">
+                        <a href="https://www.womenwhocode.com/manila" target="_blank">
+                            <img src="./images/philippines.png" alt="WWCode Phillipines" class="footer-image round">
+                        </a>
+                        Manila
+                    </div>
+                </div>
+            </div>
+            <div class="col footer-group" id="credits">
+                <div>Country icons made by <a href="https://www.flaticon.com/authors/freepik">freepik</a>
+                    from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                    is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(window).scroll(function() {
+                $('#credits').each(function(){
+                    var imagePos = $(this).offset().top;
+
+                    var topOfWindow = $(window).scrollTop();
+                    if (imagePos < topOfWindow+400) {
+                        $(this).addClass("slideUp");
+                    }
+                });
+            });
+        </script>
+    </body>
+    </html>
