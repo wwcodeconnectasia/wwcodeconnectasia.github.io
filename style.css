@@ -1,19 +1,83 @@
 .bg {
     background-image: url("./images/conference.jpg");
-    /* background-attachment: fixed;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+}
+
+.bg-large {
     height: 500px;
-    display: flex; */
+}
+
+.bg-small {
+    height: 200px;
+}
+
+.title-line {
+    border-color: white;
+    /* width: 70%; */
+    max-width: 300px;
+    margin: auto;
+
 }
 
 .wwc-title {
-    color: white;
+    /* font-size:8vw;
+    max-width: 100%; */
+    /* color: white;
     max-width: 50%;
     padding: 5%;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif; */
 }
+
+.text-right{
+    border-right: 2px solid;
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.page {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.content-image {
+    box-shadow: 10px 15px #a5edf7;
+    transition: .5s ease;
+    object-fit: cover;
+}
+
+
+.footer-image {
+    height: 70px;
+    transition: .5s ease;
+    box-shadow: 2px 2px #a5edf7;
+}
+
+.footer-image.round {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.footer-image:hover, .content-image:hover {
+    box-shadow: 5px 5px #3f939e;
+}
+
+.card-elevated {
+    margin-top: -150px;
+}
+/*
+.wwc-title {
+    color: white;
+    /* text-shadow: 2px 2px black; */
+    /* font-family: 'Charmonman', sans-serif; */
+    /* padding: 1%; */
+/* }
 
 .text-right{
     border-right: 2px solid;

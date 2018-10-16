@@ -1,4 +1,4 @@
-.bg {
+/* .bg {
     background-image: url("././images/conference.jpg");
     /* background-attachment: fixed;
     background-position: center;
@@ -6,8 +6,8 @@
     background-size: cover;
     height: 500px;
     display: flex; */
-}
-
+/* } */
+/*
 .wwc-title {
     color: white;
     max-width: 50%;
@@ -37,20 +37,19 @@
 
 
 .footer-image {
-    height: 100px;
+    height: 70px;
     transition: .5s ease;
-    margin-bottom: 10%;
-    box-shadow: 10px 10px #a5edf7;
+    box-shadow: 2px 2px #a5edf7;
 }
 
 .footer-image.round {
-    height: 60px;
+    height: 30px;
     border-radius: 50%;
 }
 
 .footer-image:hover, .content-image:hover {
     box-shadow: 5px 5px #3f939e;
-}
+} */
 
 
 /*
