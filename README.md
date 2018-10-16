@@ -4,17 +4,21 @@
 <p>Website for Women Who Code Connect Asia, a technology conference happening on 8th March 2019 (in conjuction with International Women's Day).
 Organized by the Women Who Code communities in Asia.</p>
 <p>
+<center>
 <a href="https://www.womenwhocode.com/singapore">
   <img src="./images/singapore.png" width="88"/>
 </a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.womenwhocode.com/manila">
   <img src="./images/philippines.png" width="88"/>
 </a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.womenwhocode.com/kl">
   <img src="./images/malaysia.png"  width="88"/>
 </a>
+</center>
 </p>
-<hr>
+<h1></h1>
 <div class="copyright">
   Layout by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> &copy;
   2018
