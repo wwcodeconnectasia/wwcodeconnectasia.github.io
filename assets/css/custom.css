@@ -1,0 +1,138 @@
+/* .bg {
+    background-image: url("././images/conference.jpg");
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex; */
+/* } */
+/*
+.wwc-title {
+    color: white;
+    max-width: 50%;
+    padding: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.text-right{
+    border-right: 2px solid;
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.page {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.content-image {
+    box-shadow: 10px 15px #a5edf7;
+    transition: .5s ease;
+    object-fit: cover;
+}
+
+
+.footer-image {
+    height: 70px;
+    transition: .5s ease;
+    box-shadow: 2px 2px #a5edf7;
+}
+
+.footer-image.round {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.footer-image:hover, .content-image:hover {
+    box-shadow: 5px 5px #3f939e;
+} */
+
+
+/*
+
+.title-box {
+    background: rgba(6, 39, 65, 0.35);
+    z-index: 1;
+    margin: auto;
+    padding: 10px;
+    color: #a5edf7;
+    text-shadow: 3px 3px #062741;
+    box-shadow: 8px 8px;
+}
+
+.content {
+    margin-bottom: 100px;
+}
+.content-title {
+    color:  #062741;
+    text-align: center;
+    margin: 10px;
+    /* background-repeat: no-repeat; */
+    /* padding-left: 1px; */
+
+    /* https://codepen.io/P1N2O/pen/pyBNzX */
+    /* background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+    /* border-spacing: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-image: linear-gradient(to right, #a5edf7 0%,#044e70 100%);
+    border-image-slice: 1;
+} */
+
+/* .content-text {
+    padding-left: 20px;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    text-align: center;
+}
+
+.footer {
+    background: content-box !important;
+    display: flex;
+}
+
+.footer-group {
+    padding: 10px;
+    margin: auto;
+}
+
+.footer-logo {
+    height: 100px;
+}
+
+.footer-image {
+    height: 100px;
+    transition: .5s ease;
+    margin: 10px;
+    box-shadow: 10px 10px #a5edf7;
+}
+
+.footer-image.round {
+    height: 60px;
+    border-radius: 50%;
+}
+
+#credits {
+    width: 30%;
+}
+
+#local-chapters, .chapter {
+    max-width: 30%; */
+    /* margin: auto; */
+    /* text-align: center;
+} */
