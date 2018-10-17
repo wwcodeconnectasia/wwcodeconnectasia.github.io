@@ -210,6 +210,12 @@
     var intervalInHours = intervalInMinutes * 60;// 1000 * 60 * 60
     var intervalInDays = intervalInHours * 24; // 1000 * 60 * 60 * 24
 
+    ["countdownD", "countdownH", "countdownM", "countdownS"].forEach((countdown) => {
+      document.getElementById(countdown).style.fontSize = "large";
+      document.getElementById(countdown).style.background = "rgb(0, 0, 0, 0.5)";
+      document.getElementById(countdown).style.border = "solid 1px white";
+    })
+
     var x = setInterval(function () {
       var now = new Date().getTime();
       var distance = countDownDate - now;
@@ -224,7 +230,6 @@
       { id: "countdownM", value: minutes },
       { id: "countdownS", value: seconds }].forEach((countdown) => {
         document.getElementById(countdown.id).innerHTML = countdown.value;
-        document.getElementById(countdown.id).style.fontSize = "large";
       })
     }, intervalInSeconds);
   </script>

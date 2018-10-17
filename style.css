@@ -71,12 +71,6 @@
     margin-top: -150px;
 }
 
-#countdownD, #countdownH, #countdownM, #countdownS {
-    background: rgb(0,0,0,0.5);
-    border: solid 1px rgb(255,255,255);
-    color: white;
-}
-
 /*
 .wwc-title {
     color: white;
