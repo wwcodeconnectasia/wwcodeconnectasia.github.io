@@ -87,8 +87,25 @@
                 <h2 class="text-bold text-white" style="line-height: 0.8"><strong>WOMEN WHO CODE</strong></h2>
                 <hr class="title-line">
                 <h2 class="text-white mb-4">CONNECT ASIA 2019</h2>
-                <h3 class="text-bold text-white">8<sup>th</sup> March 2019, Singapore</h3>
-                <div class="btn-wrapper mt-5">
+                <h5 class="text-bold text-white">Saturday 9<sup>th</sup> March 2019
+                  <i class="fa fa-map-marker pl-2 pr-1" aria-hidden="true"></i> Singapore</h5>
+                <div class="col-lg-12 mt-4 d-flex text-white">
+                  <ul class=" nav nav-pills nav-pills-circle m-auto" id="tabs_2" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link rounded-circle" id="countdownD"></a>days
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link rounded-circle" id="countdownH"></a>hours
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link rounded-circle" id="countdownM"></a>min
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link rounded-circle" id="countdownS"></a>sec
+                    </li>
+                  </ul>
+                </div>
+                <div class="btn-wrapper mt-4">
                   <a href="http://goo.gl/forms/yHvVXsgAffutFM5x1" class="btn btn-lg btn-warning mb-3 mb-sm-0" target="_blank">
                     <span class="btn-inner--text">Call For Proposal
                     </span>
@@ -102,7 +119,6 @@
             </div>
           </div>
         </div>
-        <!-- SVG separator -->
         <div class="separator separator-bottom separator-skew zindex-100">
           <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
@@ -134,7 +150,7 @@
     <div class="container">
       <hr>
       <div class="row align-items-center justify-content-center">
-        <h5 class="d-block text-uppercase text-muted font-weight-bold mb-3">Women Who Code Asia</h5>
+        <h6 class="d-block text-uppercase text-muted font-weight-bold mb-3">Women Who Code Organizers in Asia</h6>
       </div>
       <div class="row align-items-center">
         <div class="col-md-4">
@@ -186,7 +202,32 @@
   <script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
   <!-- Argon JS -->
   <script src="./assets/js/argon.js?v=1.0.1"></script>
+  <script>
 
+    var countDownDate = new Date("Mar 5, 2019 00:00:00").getTime();
+    var intervalInSeconds = 1000;
+    var intervalInMinutes = intervalInSeconds * 60; // 1000 * 60
+    var intervalInHours = intervalInMinutes * 60;// 1000 * 60 * 60
+    var intervalInDays = intervalInHours * 24; // 1000 * 60 * 60 * 24
+
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / intervalInDays);
+      var hours = Math.floor((distance % intervalInDays) / intervalInHours);
+      var minutes = Math.floor((distance % intervalInHours) / intervalInMinutes);
+      var seconds = Math.floor((distance % intervalInMinutes) / intervalInSeconds);
+
+      [{ id: "countdownD", value: days },
+      { id: "countdownH", value: hours },
+      { id: "countdownM", value: minutes },
+      { id: "countdownS", value: seconds }].forEach((countdown) => {
+        document.getElementById(countdown.id).innerHTML = countdown.value;
+        document.getElementById(countdown.id).style.fontSize = "large";
+      })
+    }, intervalInSeconds);
+  </script>
 </body>
 
 </html>
