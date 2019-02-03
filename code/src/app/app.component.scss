@@ -1,0 +1,177 @@
+
+$wwcode-teal: rgb(0, 122, 124);
+$dark-teal:  rgb(9, 65, 66);
+$light-teal:  rgb(68, 158, 160);
+$very-light-teal: rgb(165, 237, 247);
+
+@media only screen and (max-width: 400px) {
+    .btn-cfp {
+      margin-right: 2rem;
+    }
+    .section, .talk-formats {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .btn-cfp {
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 899px) {
+    .section, .talk-formats {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .section, .talk-formats {
+        padding-right: 10rem;
+        padding-left: 10rem;
+    }
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    z-index: 1;
+    border-bottom: 2px solid $wwcode-teal;
+}
+
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 2;
+
+    &-title {
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.75em;
+    }
+}
+
+
+.content {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-teal{
+    color: $wwcode-teal;
+}
+
+.title {
+     &-container {
+        background-image:
+        linear-gradient(gray, gray),
+        url("../assets/images/connect_cover_1.jpeg");
+        background-blend-mode: saturation;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-content {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    &-text {
+        color: white;
+        text-shadow: 3px 3px $wwcode-teal;
+    }
+}
+
+.bg {
+    &-dark-teal {
+        background-color: $dark-teal;
+        color: white;
+    }
+
+    &-teal {
+        background-color: $wwcode-teal;
+        color: white;
+    }
+
+    &-teal-gradient-bottom-right {
+        background-image: linear-gradient(to bottom right, $wwcode-teal, $very-light-teal);
+        color: white;
+    }
+
+    &-teal-gradient-top-right {
+        background-image: linear-gradient(to top right, $wwcode-teal, $very-light-teal);
+        color: white;
+    }
+
+    &-light-teal {
+        background-color: $light-teal;
+        color: white;
+    }
+
+    &-very-light-teal {
+        background-color: $very-light-teal;
+    }
+}
+
+.btn {
+    &-wwcode {
+        background-color: $wwcode-teal;
+        color: white;
+        border-color: white;
+
+        &:hover  {
+            background-color: white;
+            color: $wwcode-teal;
+            border-color: $wwcode-teal;
+        }
+    }
+
+    &-wwcode-inverse {
+        background-color: white;
+        color: $wwcode-teal;
+        border-color: $wwcode-teal;
+
+        &:hover  {
+            background-color: $wwcode-teal;
+            color: white;
+            border-color: white;
+        }
+    }
+}
+
+.footer-text {
+    font-size: 0.8em;
+}
+
+.country-flag {
+    transition: all .1s linear;
+    filter: drop-shadow(2px 2px $very-light-teal);
+    width: 40px;
+    border-radius: 18px;
+
+    &:hover {
+        filter: drop-shadow(5px 5px $wwcode-teal);
+    }
+}
+
+.social-media-icon {
+    width: 25px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    transition: all 0.1s linear;
+    cursor: pointer;
+
+    &:hover {
+        margin-top: -5px;
+        filter: drop-shadow(3px 3px $wwcode-teal);
+    }
+}
