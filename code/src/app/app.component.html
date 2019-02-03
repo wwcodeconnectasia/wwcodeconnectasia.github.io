@@ -38,7 +38,7 @@
         include the industry's most influential leaders, engineers, and more.
       </p>
       <p>
-        The conference will be held on August 31<sup>st</sup>,
+        The conference will be held on August 31<sup>st</sup> and September 1<sup>st</sup>
         2019
         in
         Singapore.
@@ -46,10 +46,11 @@
       <p>
         We are changing the face of tech, creating a more inclusive and diverse industry, and helping women connect
         with
-        professional opportunities that propel them into positions of power. WWCode CONNECT 2019 does just that.
+        professional opportunities that propel them into positions of power. WWCode CONNECT Asia 2019 does just that.
       </p>
       <p>
-        WWCode CONNECT 2019 brings together speakers from around the world to share their stories and expertise about
+        WWCode CONNECT Asia 2019 brings together speakers from around the world to share their stories and expertise
+        about
         technology. Join the Women Who Code community for in-depth panels, technical workshops, keynotes, and
         actionable
         advice
@@ -75,7 +76,7 @@
       </h5>
       <h5>
         <i class="fa fa-calendar-alt mr-1"></i>
-        August 31<sup>st</sup>, 2019
+        August 31<sup>st</sup> - September 1<sup>st</sup>, 2019
       </h5>
     </div>
   </div>
@@ -208,7 +209,7 @@
           </li>
           <li class="mb-2">
             <h5>
-              Hands-on Workshops: 50 minutes and longer
+              Hands-on Workshops (On 1<sup>st</sup> Sep): 2 hours
             </h5>
           </li>
         </ul>
@@ -249,16 +250,18 @@
       WOMEN WHO CODE ORGANIZERS IN ASIA
     </div>
     <div class="row align-items-center">
-      <div *ngFor="let country of countries" class="col-md-3">
-        <div class="mb-3">
+      <div class="col-md-1"></div>
+
+      <div *ngFor="let country of countries" class="col-md-2">
+        <div class="mb-2">
           <a [href]="country.link" target="_blank">
-            <img [src]="country.flag" class="country-flag">
-            <small class="text-uppercase font-weight-bold m-2 text-white">
+            <div class="text-uppercase text-white">
               {{country.name}}
-            </small>
+            </div>
+            <img [src]="country.flag" class="country-flag mb-2">
           </a>
         </div>
-        <div *ngIf="country.contacts" class="mb-3">
+        <div *ngIf="country.contacts" class="mb-4">
           <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-mail.svg" class="social-media-icon"
             (click)="redirect(country.contacts.email)">
           <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook.svg" class="social-media-icon"
@@ -267,6 +270,8 @@
             (click)="redirect(country.contacts.twitter)">
         </div>
       </div>
+
+      <div class="col-md-1"></div>
     </div>
   </div>
 

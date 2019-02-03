@@ -3,7 +3,6 @@ const organizers = [
     name: 'Singapore',
     flag: 'https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/flags/1x1/sg.svg',
     link: 'https://www.womenwhocode.com/singapore',
-    imagePath: '../assets/images/singapore.png',
     contacts: {
       email: 'singapore@womenwhocode.com',
       facebook: 'https://www.facebook.com/groups/wwcodesingapore',
@@ -14,7 +13,6 @@ const organizers = [
     name: 'Manila',
     flag: 'https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/flags/1x1/ph.svg',
     link: 'https://www.womenwhocode.com/manila',
-    imagePath: '../assets/images/philippines.png',
     contacts: {
       email: 'manila@womenwhocode.com',
       facebook: 'https://www.facebook.com/groups/wwcodemanila',
@@ -25,7 +23,6 @@ const organizers = [
     name: 'Tokyo',
     flag: 'https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/flags/1x1/jp.svg',
     link: 'https://www.womenwhocode.com/tokyo',
-    imagePath: '../assets/images/japan.png',
     contacts: {
       email: 'tokyo@womenwhocode.com',
       facebook: 'https://www.facebook.com/wwcode.tokyo/',
@@ -36,13 +33,22 @@ const organizers = [
     name: 'Kuala Lumpur',
     flag: 'https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/flags/1x1/my.svg',
     link: 'https://www.womenwhocode.com/kl',
-    imagePath: '../assets/images/malaysia.png',
     contacts: {
       email: 'kualalumpur@womenwhocode.com',
       facebook: 'https://www.facebook.com/groups/womenwhocodekl',
       twitter: 'https://twitter.com/WomenwhocodeKL'
     }
   },
+  {
+    name: 'Seoul',
+    flag: 'https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/flags/1x1/kr.svg',
+    link: '',
+    contacts: {
+      email: 'seoul@womenwhocode.com',
+      facebook: 'https://www.facebook.com/wwcodeseoul/',
+      twitter: 'https://twitter.com/wwcodeseoul'
+    }
+  }
 ];
 
 export default organizers;
