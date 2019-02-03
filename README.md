@@ -11,19 +11,23 @@ Organized by the Women Who Code communities in Asia.</p>
     <h3>Singapore</h3>
   <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/flags/1x1/sg.svg" width="88"/>
 </a>
+
 <a href="https://www.womenwhocode.com/manila">
   <h3>Manila</h3>
   <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/flags/1x1/ph.svg" width="88"/>
 </a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 <a href="https://www.womenwhocode.com/kl">
   <h3>Kuala Lumpur</h3>
   <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/flags/1x1/my.svg"  width="88"/>
 </a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 <a href="https://www.womenwhocode.com/tokyo">
   <h3>Tokyo</h3>
   <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/flags/1x1/jp.svg"  width="88"/>
 </a>
+
+<h3>Seoul</h3>
+<img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/flags/1x1/kr.svg"  width="88"/>
 
 </p>
