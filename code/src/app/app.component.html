@@ -1,12 +1,25 @@
 <div class="content">
+  <ng-container *ngTemplateOutlet="header"></ng-container>
+  <ng-container *ngTemplateOutlet="title"></ng-container>
+  <ng-container *ngTemplateOutlet="callForProposal"></ng-container>
+  <ng-container *ngTemplateOutlet="eventDetails"></ng-container>
+  <ng-container *ngTemplateOutlet="lookingFor"></ng-container>
+  <ng-container *ngTemplateOutlet="talkFormats"></ng-container>
+  <ng-container *ngTemplateOutlet="cfpDeadline"></ng-container>
+  <ng-container *ngTemplateOutlet="organizers"></ng-container>
+  <ng-container *ngTemplateOutlet="footer"></ng-container>
+</div>
 
+<ng-template #header>
   <header class="sticky">
     <div data-aos="fade-in" class="header m-3">
       <img width="100" alt="Women Who Code Logo" [src]="wwcodeLogoSrc" class="pr-3">
       <strong class="text-teal">CONNECT ASIA 2019</strong>
     </div>
   </header>
+</ng-template>
 
+<ng-template #title>
   <div class="title-container text-center">
     <div class="title-content">
       <h1 class="title-text" data-aos="fade-in">
@@ -19,7 +32,9 @@
       <div class="btn btn-wwcode mt-3" (click)="redirect('speaker')" data-aos="fade-left">Submit Speaker's Profile</div>
     </div>
   </div>
+</ng-template>
 
+<ng-template #callForProposal>
   <div class="section">
     <h3 class="section-title text-teal" data-aos="zoom-in">
       <strong>
@@ -61,7 +76,9 @@
       </p>
     </div>
   </div>
+</ng-template>
 
+<ng-template #eventDetails>
   <div class="row">
     <div class="col-sm-6 bg-dark-teal text-center pt-4 pb-3" data-aos="fade-right">
       <div class="section-title mt-3">
@@ -82,7 +99,9 @@
       </h5>
     </div>
   </div>
+</ng-template>
 
+<ng-template #lookingFor>
   <div class="section">
     <h3 class="section-title text-teal" data-aos="zoom-in">
       What We're Looking For
@@ -191,7 +210,9 @@
       </p>
     </div>
   </div>
+</ng-template>
 
+<ng-template #talkFormats>
   <div class="text-center" data-aos="fade-left">
     <div class="row">
       <div class="col-sm-9 bg-light-teal pt-3">
@@ -222,7 +243,9 @@
     </div>
 
   </div>
+</ng-template>
 
+<ng-template #cfpDeadline>
   <div class="section">
     <div class="section-title text-teal" data-aos="zoom-in">Share Your Expertise</div>
 
@@ -248,16 +271,19 @@
       </p>
     </div>
   </div>
+</ng-template>
 
+
+<ng-template #organizers>
   <div class="section bg-teal-gradient-bottom-right pb-4">
-    <div class="section-title text-white" data-aos="zoom-in">
+    <div class="section-title text-white" data-aos="fade-in">
       WOMEN WHO CODE ORGANIZERS IN ASIA
     </div>
 
     <div class="row align-items-center">
       <div class="col-md-1"></div>
 
-      <div *ngFor="let country of countries" class="col-md-2" data-aos="fade-up">
+      <div *ngFor="let country of countries" class="col-md-2" data-aos="fade-in">
         <div class="mb-2">
           <a [href]="country.link" target="_blank">
             <div class="text-uppercase text-white">
@@ -279,7 +305,9 @@
       <div class="col-md-1"></div>
     </div>
   </div>
+</ng-template>
 
+<ng-template #footer>
   <footer class="text-muted footer-text">
     <div class="section">
       <p>
@@ -288,5 +316,4 @@
       </p>
     </div>
   </footer>
-
-</div>
+</ng-template>
