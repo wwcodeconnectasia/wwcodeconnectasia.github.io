@@ -15,7 +15,7 @@
     <div class="header m-3">
       <img width="100" alt="Women Who Code Logo" [src]="wwcodeLogoSrc" class="pr-3">
       <strong class="text-teal">CONNECT ASIA 2019</strong>
-      <strong class="text-teal float-right">#connectasia</strong>
+      <strong class="text-teal float-right">{{hashtags.join(' ')}}</strong>
     </div>
   </header>
 </ng-template>
@@ -86,7 +86,7 @@
         Connect Asia 2019
       </div>
       <h3>
-        #connectasia
+        {{hashtags.join(' ')}}
       </h3>
     </div>
     <div class="col-sm-6 bg-teal p-3 pl-5" data-aos="fade-left">
@@ -281,10 +281,17 @@
       WOMEN WHO CODE ORGANIZERS IN ASIA
     </div>
 
+    <h5>
+      Contact us&nbsp;:&nbsp;
+      <a href="mailto:{{email}}" class="text-white mb-2">
+        {{email}}
+      </a>
+    </h5>
+
     <div class="row align-items-center">
       <div class="col-md-1"></div>
 
-      <div *ngFor="let country of countries" class="col-md-2" data-aos="fade-in">
+      <div *ngFor="let country of countries" class="col-md-2 mt-5" data-aos="fade-in">
         <div class="mb-2">
           <a [href]="country.link" target="_blank">
             <div class="text-uppercase text-white">
@@ -294,8 +301,8 @@
           </a>
         </div>
         <div *ngIf="country.contacts" class="mb-4">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-mail.svg" class="social-media-icon"
-            (click)="redirect(country.contacts.email)">
+          <!-- <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-mail.svg" class="social-media-icon"
+            (click)="redirect(country.contacts.email)"> -->
           <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook.svg" class="social-media-icon"
             (click)="redirect(country.contacts.facebook)">
           <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-twitter.svg" class="social-media-icon"
