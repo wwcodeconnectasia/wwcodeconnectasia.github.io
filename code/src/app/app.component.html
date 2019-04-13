@@ -44,7 +44,8 @@
     </h3>
     <div class="text-justify" data-aos="fade-in">
       <p>
-        You're invited to submit a talk for CONNECT Asia 2019, <a href="https://www.womenwhocode.com/" target="_blank">Women
+        You're invited to submit a talk for CONNECT Asia 2019, <a href="https://www.womenwhocode.com/"
+          target="_blank">Women
           Who
           Code</a>'s
         premier technical conference in Asia.
@@ -72,7 +73,7 @@
         technology. Join the Women Who Code community for in-depth panels, technical workshops, keynotes, and
         actionable
         advice
-        on advancing your career. Please email <a href="mailto:singapore@womenwhocode.com">singapore@womenwhocode.com</a>
+        on advancing your career. Please email <a href="mailto:{{email}}">{{email}}</a>
         with any questions.
       </p>
     </div>
@@ -226,12 +227,12 @@
         <ul class="text-left talk-formats">
           <li class="mb-2">
             <h5>
-              Talks: 35 minutes
+              Talks: ~ 35 to 45 minutes
             </h5>
           </li>
           <li class="mb-2">
             <h5>
-              Lightning Talks: 5 minutes
+              Lightning Talks: ~ 5 to 15 minutes
             </h5>
           </li>
           <li class="mb-2">
@@ -257,7 +258,8 @@
     <h4 data-aos="zoom-in"><strong>June 15<sup>th</sup></strong></h4>
 
 
-    <div class="btn btn-cfp btn-wwcode-inverse mt-3" (click)="redirect('cfp')" data-aos="fade-right">Call for Proposal</div>
+    <div class="btn btn-cfp btn-wwcode-inverse mt-3" (click)="redirect('cfp')" data-aos="fade-right">Call for Proposal
+    </div>
     <div class="btn btn-wwcode-inverse mt-3" (click)="redirect('speaker')" data-aos="fade-left">Submit Speaker's
       Profile</div>
 
@@ -303,10 +305,10 @@
         <div *ngIf="country.contacts" class="mb-4">
           <!-- <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-mail.svg" class="social-media-icon"
             (click)="redirect(country.contacts.email)"> -->
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook.svg" class="social-media-icon"
-            (click)="redirect(country.contacts.facebook)">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-twitter.svg" class="social-media-icon"
-            (click)="redirect(country.contacts.twitter)">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook.svg"
+            class="social-media-icon" (click)="redirect(country.contacts.facebook)">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-twitter.svg"
+            class="social-media-icon" (click)="redirect(country.contacts.twitter)">
         </div>
       </div>
 
