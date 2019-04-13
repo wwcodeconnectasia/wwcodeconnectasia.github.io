@@ -8,9 +8,6 @@ $very-light-teal: rgb(165, 237, 247);
     .title-text, .organizers-text {
         font-size: x-large !important;
     }
-    // .section-title {
-    //     font-size: large !important;
-    // }
     .btn-cfp {
       margin-right: 0;
     }
@@ -93,7 +90,7 @@ $very-light-teal: rgb(165, 237, 247);
 
     &-text {
         color: white;
-        text-shadow: 3px 3px $wwcode-teal;
+        text-shadow: 3px 3px $light-teal;
     }
 }
 
@@ -133,8 +130,10 @@ $very-light-teal: rgb(165, 237, 247);
         background-color: $wwcode-teal;
         color: white;
         border-color: white;
+        transition: 0.2s linear !important;
 
         &:hover  {
+            box-shadow: 8px 8px;
             background-color: white;
             color: $wwcode-teal;
             border-color: $wwcode-teal;
