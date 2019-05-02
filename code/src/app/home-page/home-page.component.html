@@ -1,0 +1,48 @@
+<div class="content">
+  <ng-container *ngTemplateOutlet="header"></ng-container>
+
+  <app-introduction></app-introduction>
+  <ng-container *ngTemplateOutlet="eventDetails"></ng-container>
+
+  <app-divider></app-divider>
+
+  <app-call-for-proposal></app-call-for-proposal>
+  <app-shirt-design></app-shirt-design>
+
+  <app-divider></app-divider>
+
+  <app-speaking-details id="speaking-details"></app-speaking-details>
+
+  <app-divider></app-divider>
+
+  <app-organizers></app-organizers>
+
+  <ng-container *ngTemplateOutlet="footer"></ng-container>
+</div>
+
+
+<ng-template #header>
+  <header class="sticky">
+    <div class="header m-3">
+      <img width="100" alt="Women Who Code Logo" src="../../assets/images/connect-logo.png" class="pr-3">
+      <strong class="text-teal">CONNECT ASIA 2019</strong>
+      <strong class="text-teal float-right">{{hashtags.join(' ')}}</strong>
+    </div>
+  </header>
+</ng-template>
+
+
+
+
+
+<ng-template #footer>
+  <footer class="text-muted footer-text">
+    <div class="section">
+      <p>
+        © 2019 Women Who Code | Women Who Code is a 501(c)(3) non-profit dedicated to inspiring women to excel
+        in
+        technology careers.
+      </p>
+    </div>
+  </footer>
+</ng-template>
