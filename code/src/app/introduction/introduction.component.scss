@@ -1,1 +1,58 @@
 @import '../app.component.scss';
+
+$logo-max-height: 200px;
+
+$intro-background-breakpoint: 1050px;
+
+.intro-background {
+    @media only screen and (max-width: $intro-background-breakpoint) {
+        display: none;
+    }
+
+    position: absolute;
+    object-fit: cover;
+    max-width: 350px;
+    height: $logo-max-height + 50px;
+
+    &-left-top {
+        -webkit-clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
+        left: 0;
+    }
+
+    &-left-bottom {
+        -webkit-clip-path: polygon(0 40%, 82% 28%, 100% 100%, 0 100%);
+        clip-path: polygon(0 40%, 82% 28%, 100% 100%, 0 100%);
+        left: 0;
+        top: $logo-max-height;
+    }
+
+    &-right-top {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+        right: 0;
+    }
+
+     &-right-bottom {
+        -webkit-clip-path: polygon(18% 31%, 100% 24%, 100% 100%, 0 100%);
+        clip-path: polygon(18% 31%, 100% 24%, 100% 100%, 0 100%);
+        right: 0;
+        top: $logo-max-height;
+    }
+}
+
+
+
+.intro-logo {
+    background-image: url('../../assets/images/connect-logo.png') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    width: 250px;
+    height: $logo-max-height;
+    margin: auto;
+}
+
+#merlion {
+    height: 8rem;
+}

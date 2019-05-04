@@ -74,7 +74,7 @@ $very-light-teal: rgb(165, 237, 247);
     padding-bottom: 0.3rem;
     padding-top: 0.3rem;
     z-index: 1;
-    border-bottom: 2px solid $wwcode-teal;
+    border-bottom: 5px solid $wwcode-teal;
 }
 
 .section {
@@ -101,19 +101,8 @@ $very-light-teal: rgb(165, 237, 247);
 }
 
 .title {
-    //  &-container {
-    //     // background-image:
-    //     // linear-gradient(gray, gray),
-    //     // // url("../assets/images/connect_cover_1.jpeg");
-    //     // background-blend-mode: saturation;
-    //     // background-attachment: fixed;
-    //     // background-position: center;
-    //     // background-repeat: no-repeat;
-    //     // background-size: cover;
-    // }
-
     &-content {
-        padding-top: 5rem;
+        padding-top: 0.2rem;
         padding-bottom: 0.2rem;
     }
 
@@ -184,10 +173,6 @@ $very-light-teal: rgb(165, 237, 247);
     }
 }
 
-.title-header {
-
-}
-
 .footer-text {
     font-size: 0.8em;
 }
@@ -214,5 +199,14 @@ $very-light-teal: rgb(165, 237, 247);
     &:hover {
         margin-top: -5px;
         filter: drop-shadow(3px 3px $wwcode-teal);
+    }
+}
+
+.font-size {
+    &-3 {
+        font-size: 3vh;
+    }
+    &-2 {
+        font-size: 2vh;
     }
 }

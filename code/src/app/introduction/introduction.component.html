@@ -1,26 +1,32 @@
 <div class="title-container">
-  <div class="title-header">
 
-    <div>
-      <img align="left" width="300" alt="Women Who Code Logo" src="../../assets/images/connect-logo.png">
+  <img src="assets/images/connect_cover_tokyo_qna.jpg" class="intro-background intro-background-left-top">
+  <img src="assets/images/connect_cover_manila_group.jpeg" class="intro-background intro-background-left-bottom">
+  <img src="assets/images/connect_cover_dancing.jpg" class="intro-background intro-background-right-top">
+  <img src="assets/images/connect_cover_tokyo_speaker.jpg" class="intro-background intro-background-right-bottom">
+
+  <div class="intro-left"></div>
+  <div class="intro-logo"></div>
+  <div class="row text-center">
+    <div class="col-6 text-right ml-4 my-auto">
+      <img src="https://image.flaticon.com/icons/svg/1752/1752185.svg" id="merlion">
     </div>
-    <br>
-    <div class="text-left">
+    <div class="col-5 text-left mt-1 px-2">
       <h5>
         Singapore
       </h5>
       <h5>
         31<sup>st</sup> August 2019
       </h5>
-      <h5 class="text-teal">
+      <h5 class="text-teal" *ngFor="let hashtag of hashtags">
         <strong>
-          {{hashtags.join(' ')}}
+          {{hashtag}}
         </strong>
       </h5>
     </div>
   </div>
 
-  <div class="title-content">
+  <div class="title-content section">
     <div class="text-justify section-text">
       <p>
         CONNECT Asia 2019 is <a href="https://www.womenwhocode.com/" target="_blank">Women Who Code</a>'s premier

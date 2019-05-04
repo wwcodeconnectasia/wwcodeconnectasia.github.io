@@ -47,3 +47,9 @@ Before you commit your new code changes, compile the application with
 yarn build
 ~~~~
 and commit also the fresh new build artifacts (output on the build folder)
+
+## 3. To see what GitHub pages will look like
+Load the index.html on the same folder level as this README
+
+## 4. Build issues to work out
+Any new images should be added in code/src/assets but after build, they must be manually added in assets on the same folder level as this README.

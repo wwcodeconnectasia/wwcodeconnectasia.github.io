@@ -2,7 +2,6 @@
   <ng-container *ngTemplateOutlet="header"></ng-container>
 
   <app-introduction></app-introduction>
-  <ng-container *ngTemplateOutlet="eventDetails"></ng-container>
 
   <app-divider></app-divider>
 
@@ -24,15 +23,13 @@
 <ng-template #header>
   <header class="sticky">
     <div class="header m-3">
-      <img width="100" alt="Women Who Code Logo" src="../../assets/images/connect-logo.png" class="pr-3">
-      <strong class="text-teal">CONNECT ASIA 2019</strong>
-      <strong class="text-teal float-right">{{hashtags.join(' ')}}</strong>
+      <img width="120" alt="Women Who Code Logo" src="assets/images/connect-logo.png" class="pr-3">
+      <strong class="text-teal font-size-3">CONNECT ASIA 2019</strong>
+      <strong class="text-teal float-right font-size-2">{{hashtags.join(' ')}}</strong>
     </div>
   </header>
+
 </ng-template>
-
-
-
 
 
 <ng-template #footer>
@@ -43,6 +40,11 @@
         in
         technology careers.
       </p>
+
+      <div>Merlion icon made by <a href="https://www.flaticon.com/authors/photo3idea-studio"
+          title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/"
+          title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+          title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </div>
   </footer>
 </ng-template>
