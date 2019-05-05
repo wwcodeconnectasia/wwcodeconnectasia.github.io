@@ -52,4 +52,4 @@ and commit also the fresh new build artifacts (output on the build folder)
 Load the index.html on the same folder level as this README
 
 ## 4. Build issues to work out
-Any new images should be added in code/src/assets but after build, they must be manually added in assets on the same folder level as this README.
+Any new images and data should be added in code/src/assets during development but after build, they must be manually added in assets on the same folder level as this README.

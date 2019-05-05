@@ -1,58 +1,113 @@
 @import '../app.component.scss';
 
-$logo-max-height: 200px;
+$logo-max-dimension: 200px;
 
-$intro-background-breakpoint: 1050px;
+@mixin position($clip-path, $position, $offset-x: 0) {
+    -webkit-clip-path: $clip-path;
+    clip-path: $clip-path;
 
-.intro-background {
-    @media only screen and (max-width: $intro-background-breakpoint) {
-        display: none;
+    @if str-index($position, 'right-') {
+        right: $offset-x;
+    } @else {
+        left: $offset-x;
     }
 
-    position: absolute;
-    object-fit: cover;
-    max-width: 350px;
-    height: $logo-max-height + 50px;
-
-    &-left-top {
-        -webkit-clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
-        left: 0;
-    }
-
-    &-left-bottom {
-        -webkit-clip-path: polygon(0 40%, 82% 28%, 100% 100%, 0 100%);
-        clip-path: polygon(0 40%, 82% 28%, 100% 100%, 0 100%);
-        left: 0;
-        top: $logo-max-height;
-    }
-
-    &-right-top {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
-        right: 0;
-    }
-
-     &-right-bottom {
-        -webkit-clip-path: polygon(18% 31%, 100% 24%, 100% 100%, 0 100%);
-        clip-path: polygon(18% 31%, 100% 24%, 100% 100%, 0 100%);
-        right: 0;
-        top: $logo-max-height;
+     @if str-index($position, '-bottom') {
+        top: $logo-max-dimension;
     }
 }
 
+@mixin adjustImageForScreen($clip-path, $clip-path-mobile, $position, $offset-mobile: -8rem, $show-on-mobile: false) {
+    $offset-x: -10rem;
+    height: $logo-max-dimension + 50px;
 
+    @media only screen
+    and (min-width: $intro-background-breakpoint) {
+        @include position($clip-path, $position);
+    }
+
+    @media only screen
+    and (max-width: $intro-background-breakpoint)
+    and (min-width: $intro-background-breakpoint-tablet) {
+        @include position($clip-path, $position, $offset-x);
+    }
+
+    @media only screen
+    and (max-width: $intro-background-breakpoint-tablet)
+    and (min-width: $intro-background-breakpoint-mobile) {
+        @include position($clip-path, $position, $offset-x - 5rem);
+    }
+
+    @media only screen
+    and (max-width: $intro-background-breakpoint-mobile)
+    and (min-width: $intro-background-breakpoint-hide) {
+        @if $show-on-mobile {
+            height: $logo-max-dimension - 10px;
+            top: auto !important;
+            @include position($clip-path-mobile, $position, $offset-mobile);
+        } @else {
+            display: none;
+        }
+
+    }
+
+    @media only screen
+    and (max-width: $intro-background-breakpoint-hide) {
+        display: none;
+    }
+}
+
+.intro-background {
+    position: absolute;
+    object-fit: cover;
+    max-width: 350px;
+    $clip-path-mobile: polygon(25% 0%, 61% 0, 34% 100%, 0% 100%);
+    z-index: -1;
+
+    &-left-top {
+        $clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
+        $clip-path-mobile: polygon(70% 0, 60% 50%, 70% 100%, 0 100%, 0 0);
+        $position: 'left-top';
+        $offset-mobile: -7.3rem;
+        @include adjustImageForScreen($clip-path, $clip-path-mobile, $position, $offset-mobile, true);
+    }
+
+    &-left-bottom {
+        $clip-path: polygon(0 40%, 82% 28%, 100% 100%, 0 100%);
+        $position: 'left-bottom';
+        @include adjustImageForScreen($clip-path, $clip-path-mobile, $position);
+    }
+
+    &-right-top {
+        $clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+        $position: 'right-top';
+        @include adjustImageForScreen($clip-path, $clip-path-mobile, $position);
+    }
+
+     &-right-bottom {
+        $clip-path: polygon(18% 31%, 100% 24%, 100% 100%, 0 100%);
+        $clip-path-mobile: polygon(100% 0, 100% 100%, 60% 100%, 70% 50%, 60% 0);
+        $position: 'right-bottom';
+        $offset-mobile: -2rem;
+        @include adjustImageForScreen($clip-path, $clip-path-mobile, $position, $offset-mobile, true);
+    }
+}
 
 .intro-logo {
-    background-image: url('../../assets/images/connect-logo.png') ;
+    background-image: url('../../assets/images/connect_asia_logo.svg') ;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: 20px;
-    width: 250px;
-    height: $logo-max-height;
+    background-position-y: 30px;
+    width: $logo-max-dimension;
+    height: $logo-max-dimension;
     margin: auto;
 }
 
 #merlion {
     height: 8rem;
+
+    @media only screen
+    and (max-width: $intro-background-breakpoint-mobile) {
+        height: 6rem;
+    }
 }
