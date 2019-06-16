@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { NavigationService } from '../navigation.service';
 import { Context } from '../context.enum';
+import { email } from 'src/assets/data/misc';
 
 @Component({
   selector: 'app-call-for-proposal',
@@ -9,6 +10,8 @@ import { Context } from '../context.enum';
 })
 export class CallForProposalComponent implements OnInit {
   context = Context;
+  @Input() closed: boolean;
+  email = email;
 
   constructor(private navigationService: NavigationService) {
   }

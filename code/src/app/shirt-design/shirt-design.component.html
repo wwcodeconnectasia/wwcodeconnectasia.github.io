@@ -11,7 +11,7 @@
         </strong>
       </h3>
 
-      <div class="text-justify">
+      <div class="text-justify" *ngIf="!closed">
         <p>
           We are holding a T-shirt design contest! Winner will receive a <b>free conference ticket</b>.
         </p>
@@ -24,6 +24,11 @@
           </button>
           <span></span>
         </div>
+      </div>
+
+      <div *ngIf="closed" class="text-left">
+        The contest period has ended. Thank you to all who took part! Look forward to seeing your designs in our
+        conference.
       </div>
 
     </div>

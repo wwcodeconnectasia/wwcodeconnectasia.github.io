@@ -7,22 +7,32 @@
 
   <div class="intro-left"></div>
   <div class="intro-logo"></div>
-  <div class="row text-center">
-    <div class="col-6 text-right my-auto">
-      <img src="https://image.flaticon.com/icons/svg/1752/1752185.svg" id="merlion">
-    </div>
-    <div class="col-5 text-left mt-1 px-2">
-      <h5>
-        Singapore
-      </h5>
+  <div class="intro-details row text-center">
+    <div class="col-12 text-center mt-1 px-2 text-dark-teal">
       <h5>
         31<sup>st</sup> August 2019
       </h5>
-      <h5 class="text-teal" *ngFor="let hashtag of hashtags">
-        <strong>
-          {{hashtag}}
-        </strong>
+      <h5>
+        Lifelong Learning Institute
+        <br>
+        <small>
+          11 Eunos Road 8, <br>
+          Singapore 408601
+        </small>
       </h5>
+      <button class="btn btn-wwcode mb-3" (click)="navigationService.redirect(addToCalendarLink)">
+        🗓 <span style="font-size:12px">Add to calendar</span>
+      </button>
+      <div>
+        <span class="my-auto mx-3">
+          <img src="https://image.flaticon.com/icons/svg/1752/1752185.svg" id="merlion">
+        </span>
+        <span class="text-teal" *ngFor="let hashtag of hashtags">
+          <strong>
+            {{hashtag}}
+          </strong>
+        </span>
+      </div>
     </div>
   </div>
 

@@ -1,8 +1,10 @@
+$color-map: (
+    'teal': rgb(0, 122, 124),
+    'dark-teal':  rgb(9, 65, 66),
+    'light-teal':  rgb(68, 158, 160),
+    'very-light-teal': rgb(165, 237, 247),
+);
 
-$wwcode-teal: rgb(0, 122, 124);
-$dark-teal:  rgb(9, 65, 66);
-$light-teal:  rgb(68, 158, 160);
-$very-light-teal: rgb(165, 237, 247);
 $intro-background-breakpoint: 1050px;
 $intro-background-breakpoint-tablet: 690px;
 $intro-background-breakpoint-mobile: 550px;
@@ -11,12 +13,12 @@ $intro-background-breakpoint-hide: 360px;
 $poster-image-breakpoint: 768px;
 
 .poster-image {
-    border: 3px solid $wwcode-teal;
+    border: 3px solid map-get($color-map, 'teal');
     transition: 0.1s ease-in;
 
     &:hover {
         transform: rotate(2deg);
-        box-shadow: 5px 5px $light-teal;
+        box-shadow: 5px 5px map-get($color-map, 'light-teal');
     }
 
     @media screen and (max-width: $poster-image-breakpoint) {
@@ -86,7 +88,7 @@ $poster-image-breakpoint: 768px;
     padding-bottom: 0.3rem;
     padding-top: 0.3rem;
     z-index: 1;
-    border-bottom: 5px solid $wwcode-teal;
+    border-bottom: 5px solid  map-get($color-map, 'teal');
 }
 
 .section {
@@ -108,8 +110,12 @@ $poster-image-breakpoint: 768px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.text-teal{
-    color: $wwcode-teal;
+.text{
+    @each $color in 'teal','dark-teal','light-teal', 'very-light-teal' {
+        &-#{$color} {
+            color: map-get($color-map, $color);
+        }
+    }
 }
 
 .title {
@@ -119,39 +125,39 @@ $poster-image-breakpoint: 768px;
     }
 
     &-text {
-        color: $wwcode-teal;
-        text-shadow: 3px 3px $very-light-teal;
+        color: map-get($color-map, 'teal');
+        text-shadow: 3px 3px  map-get($color-map, 'very-light-teal');
     }
 }
 
 .bg {
     &-dark-teal {
-        background-color: $dark-teal;
+        background-color: map-get($color-map, 'dark-teal');
         color: white;
     }
 
     &-teal {
-        background-color: $wwcode-teal;
+        background-color: map-get($color-map, 'teal');
         color: white;
     }
 
     &-teal-gradient-bottom-right {
-        background-image: linear-gradient(to bottom right, $wwcode-teal, $very-light-teal);
+        background-image: linear-gradient(to bottom right,  map-get($color-map, 'teal'), map-get($color-map, 'very-light-teal'));
         color: white;
     }
 
     &-teal-gradient-top-right {
-        background-image: linear-gradient(to top right, $wwcode-teal, $very-light-teal);
+        background-image: linear-gradient(to top right,  map-get($color-map, 'teal'), map-get($color-map, 'very-light-teal'));
         color: white;
     }
 
     &-light-teal {
-        background-color: $light-teal;
+        background-color: map-get($color-map, 'light-teal');
         color: white;
     }
 
     &-very-light-teal {
-        background-color: $very-light-teal;
+        background-color: map-get($color-map, 'very-light-teal');
     }
 }
 
@@ -159,7 +165,7 @@ $poster-image-breakpoint: 768px;
 
 .btn {
     &-wwcode {
-        background-color: $wwcode-teal;
+        background-color: map-get($color-map, 'teal');
         color: white;
         border-color: white;
         transition: 0.2s linear !important;
@@ -167,18 +173,18 @@ $poster-image-breakpoint: 768px;
         &:hover  {
             box-shadow: 8px 8px;
             background-color: white;
-            color: $wwcode-teal;
-            border-color: $wwcode-teal;
+            color: map-get($color-map, 'teal');
+            border-color: map-get($color-map, 'teal');
         }
     }
 
     &-wwcode-inverse {
         background-color: white;
-        color: $wwcode-teal;
-        border-color: $wwcode-teal;
+        color: map-get($color-map, 'teal');
+        border-color: map-get($color-map, 'teal');
 
         &:hover  {
-            background-color: $wwcode-teal;
+            background-color: map-get($color-map, 'teal');
             color: white;
             border-color: white;
         }
@@ -191,12 +197,12 @@ $poster-image-breakpoint: 768px;
 
 .country-flag {
     transition: all .1s linear;
-    filter: drop-shadow(5px 5px $very-light-teal);
+    filter: drop-shadow(5px 5px map-get($color-map, 'very-light-teal'));
     width: 40px;
     border-radius: 18px;
 
     &:hover {
-        filter: drop-shadow(8px 8px $light-teal);
+        filter: drop-shadow(8px 8px map-get($color-map, 'light-teal'));
     }
 }
 
@@ -210,7 +216,7 @@ $poster-image-breakpoint: 768px;
 
     &:hover {
         margin-top: -5px;
-        filter: drop-shadow(3px 3px $wwcode-teal);
+        filter: drop-shadow(3px 3px map-get($color-map, 'teal'));
     }
 }
 

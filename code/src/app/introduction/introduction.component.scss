@@ -95,16 +95,27 @@ $logo-max-dimension: 200px;
 
 .intro-logo {
     background-image: url('../../assets/images/connect_asia_logo.svg') ;
-    background-size: contain;
+    background-size: 180px;;
     background-repeat: no-repeat;
-    background-position-y: 30px;
+    background-position-x: 10px;
     width: $logo-max-dimension;
-    height: $logo-max-dimension;
     margin: auto;
+
+    @media only screen
+    and (min-width: $intro-background-breakpoint-mobile) {
+        background-position-y: 10px;
+        height: 130px;
+    }
+
+    @media only screen
+    and (max-width: $intro-background-breakpoint-mobile) {
+        background-position-y: 40px;
+        height: 200px;
+    }
 }
 
 #merlion {
-    height: 8rem;
+    height: 2.5rem;
 
     @media only screen
     and (max-width: $intro-background-breakpoint-mobile) {

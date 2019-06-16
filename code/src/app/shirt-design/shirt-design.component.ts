@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { NavigationService } from '../navigation.service';
 import { Context } from '../context.enum';
 
@@ -9,6 +9,7 @@ import { Context } from '../context.enum';
 })
 export class ShirtDesignComponent implements OnInit {
   context = Context;
+  @Input() closed: boolean;
 
   constructor(private navigationService: NavigationService) {
   }

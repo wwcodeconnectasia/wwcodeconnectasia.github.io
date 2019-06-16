@@ -13,28 +13,40 @@
 
       <div class="text-justify">
 
-        <p>
-          WWCode is looking for enthusiastic and dynamic speakers working in technology who want to share their
-          expertise. We aim to have speakers that represent the talent and rich diversity of our community.
-        </p>
-        <p>
-          If you have an awesome idea, do not hesitate to submit it! We will be happy to give you the necessary feedback
-          to make sure it matches audience expectations.
-        </p>
-        <p>
-          For more information, check out our <a href="#speaking-details">speaking details</a>.
-        </p>
+        <div *ngIf="!closed">
+          <p>
+            WWCode is looking for enthusiastic and dynamic speakers working in technology who want to share their
+            expertise. We aim to have speakers that represent the talent and rich diversity of our community.
+          </p>
+          <p>
+            If you have an awesome idea, do not hesitate to submit it! We will be happy to give you the necessary
+            feedback
+            to make sure it matches audience expectations.
+          </p>
+          <p>
+            For more information, check out our <a href="#speaking-details">speaking details</a>.
+          </p>
 
-        <p><strong>Deadline to Submit: June 15<sup>th</sup></strong></p>
+          <p><strong>Deadline to Submit: June 15<sup>th</sup></strong></p>
 
-        <div class="d-flex flex-direction-row">
-          <button id="posterButton" type="button" class="btn btn-wwcode" (click)="redirect(context.CallForProposal)">
-            Submit call for proposal
-          </button>
-          <button id="posterButton" type="button" class="btn btn-wwcode" (click)="redirect(context.SpeakerProfile)">
-            Submit speaker profile
-          </button>
+          <div class="d-flex flex-direction-row">
+            <button id="posterButton" type="button" class="btn btn-wwcode" (click)="redirect(context.CallForProposal)">
+              Submit call for proposal
+            </button>
+            <button id="posterButton" type="button" class="btn btn-wwcode" (click)="redirect(context.SpeakerProfile)">
+              Submit speaker profile
+            </button>
+          </div>
+
+
         </div>
+
+        <div *ngIf="closed" class="text-left">
+          Call for proposals has ended. If you have submitted one with us, we will get back to you soon.
+          For other enquiries, please feel free to email us at
+          <a href="mailto:{{email}}">{{email}}</a>.
+        </div>
+
       </div>
     </div>
 
